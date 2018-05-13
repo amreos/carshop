@@ -1,0 +1,9 @@
+<!-- app\views\edit.html.erb -->
+<%= render "/error_messages", :message_header => "Cannot save: ", :target => @listing %> 
+
+<div class="form1">
+	<div class="main-title">Edit a Listing</div>
+		<%= render 'form' %>
+		<%= link_to 'Show', @listing, class: "btn btn-success" %>
+		<%= link_to 'Back', listings_path, class: "btn btn-primary" %>
+</div>

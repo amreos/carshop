@@ -1,0 +1,179 @@
+ <!-- Page Content -->
+    <div class="container">
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Services
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Services</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Image Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="<%= asset_path('servicebanner.jpg') %>" draggable="true" ondragstart="drag(event)" width="1200" height="300" alt="car">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Service Panels -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Services Panels</h2>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+
+                    <div class="panel-body">
+                        <h3>Warranty</h3>
+                             <p> DRIVE AWAY WITH COMPLETE PEACE OF MIND.</p>
+                            <p>
+                            We pride ourselves on providing mechanically sound and robust products that have been maintained in accordance with the manufacturers service schedule where ever possible. That said as cars are after all mechanical, we offer a standard, totally free 3 month parts and labour warranty on all vehicles.
+                            </br>
+                            <p>EXTENDIBLE WARRANTY</p>
+                            </br>
+                            There is also the option to purchase a more comprehensive product up to a period of 3 years at an additional cost. Please call 0116 289 2194 for a detailed overview of all products and services available.</p>
+                        <a href="http://localhost:3000/posts/5 " class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+
+                    <div class="panel-body">
+                        <h3>Finance</h3>
+                            <p>Carshop Sales have a dedicated team of finance experts waiting to help with your enquiry.</p></br>
+                            <p>
+                            We have relationships with high street lenders and specialist motoring finance houses too, that is why we have helped hundreds of customers secure the best finance deal for their budget.
+
+                            Our expertise with finance means that even if you have a poor credit rating we can help arrange finance for you..</p>
+
+                            <p>
+                            Thousands of customers choose MotoNovo Finance every week to buy their next car, van or motorbike. We offer a range of relevant products and services quickly, efficiently and competitively and have been doing so for over 40 years.</p>
+                        <a href="http://localhost:3000/posts/6" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+
+                    <div class="panel-body">
+                        <h3>Maintanance</h3>
+                            <p>Phil is here to help keep your vihecle running costs lower. Our regular special offers extend to the manufacturer-approved servicing and maintenance that we carry out on site. The cost-effective solutions that we can provide don’t compromise on the precision and quality of the Ford maintenance work that we perform.</p><p>
+                            Find out all about any of our Ford servicing special offers by clicking on one. When you’ve read the terms and conditions and made up your mind, get in touch with us. Enquire online, call the team or visit the dealership with your Ford..</p>
+              <a href="http://localhost:3000/posts/3" class="btn btn-primary">Learn More</a>
+                 </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+
+                    <div class="panel-body">
+                        <h3>Accident Repair</h3>
+                        <p>If you've been involved in a collision on the road, there's no need to worry - get in touch with TC Harrison to arrange vehicle repairs. Our accident repair service is reassuringly comprehensive, and we support owners of both new and approved used Ford cars and commercial vehicles.</p><p>
+                        An accident can be an upsetting and stressful time, so we make sure that we provide personal and caring support to match our technical expertise. Our aim is to make life as easy as possible for you, through careful repair work and other thoughtful benefits. Should you need any help or advice at any time, please give our team a call.</p>
+                     <a href="http://localhost:3000/posts/4" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+ <!-- Service Tabs -->
+    <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Service Tabs</h2>
+            </div>
+            <div class="col-lg-12">
+                <ul id="myTab" class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Warranty</a>
+                    </li>
+                    <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i> Finance</a>
+                    </li>
+                    <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Maintanance</a>
+                    </li>
+                    <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-database"></i> Accident Repairs</a>
+                    </li>
+                </ul>
+
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="service-one">
+                        <h4>Warranty</h4>
+                           <p> DRIVE AWAY WITH COMPLETE PEACE OF MIND.</p>
+                            <p>
+                            We pride ourselves on providing mechanically sound and robust products that have been maintained in accordance with the manufacturers service schedule where ever possible. That said as cars are after all mechanical, we offer a standard, totally free 3 month parts and labour warranty on all vehicles.
+                            </br>
+                            <p>EXTENDIBLE WARRANTY</p>
+                            </br>
+                            There is also the option to purchase a more comprehensive product up to a period of 3 years at an additional cost. Please call 0116 289 2194 for a detailed overview of all products and services available.</p>
+                    </div>
+
+                    <div class="tab-pane fade" id="service-two">
+                        <h4>Finance</h4>
+                             <p>Carshop Sales have a dedicated team of finance experts waiting to help with your enquiry.</p></br>
+                                <p>
+                                We have relationships with high street lenders and specialist motoring finance houses too, that is why we have helped hundreds of customers secure the best finance deal for their budget.
+
+                                Our expertise with finance means that even if you have a poor credit rating we can help arrange finance for you..</p>
+
+                                <p>
+                                Thousands of customers choose MotoNovo Finance every week to buy their next car, van or motorbike. We offer a range of relevant products and services quickly, efficiently and competitively and have been doing so for over 40 years.</p>
+                          </div>
+
+                <div class="tab-pane fade" id="service-three">
+                        <h4>Maintanance</h4>
+                        <p>Phil is here to help keep your vihecle running costs lower. Our regular special offers extend to the manufacturer-approved servicing and maintenance that we carry out on site. The cost-effective solutions that we can provide don’t compromise on the precision and quality of the Ford maintenance work that we perform.</p><p>
+                        Find out all about any of our Ford servicing special offers by clicking on one. When you’ve read the terms and conditions and made up your mind, get in touch with us. Enquire online, call the team or visit the dealership with your Ford..</p>
+                                            </div>
+
+                    <div class="tab-pane fade" id="service-four">
+                        <h4>Accident Repairs</h4>
+                       <p>If you've been involved in a collision on the road, there's no need to worry - get in touch with TC Harrison to arrange vehicle repairs. Our accident repair service is reassuringly comprehensive, and we support owners of both new and approved used Ford cars and commercial vehicles.</p><p>
+                        An accident can be an upsetting and stressful time, so we make sure that we provide personal and caring support to match our technical expertise. Our aim is to make life as easy as possible for you, through careful repair work and other thoughtful benefits. Should you need any help or advice at any time, please give our team a call.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+  <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script> <!-- Page Content -->
+   
+
+        

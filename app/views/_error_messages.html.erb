@@ -1,0 +1,13 @@
+<!-- app\views\_error_messages.html.erb -->
+ <% if target.errors.any? %>  
+	<div id="error_explanation">  
+		 <%= message_header + pluralize(target.errors.count, "error") %>   
+		<ul>
+			<!--note: here we are only printing the error message  
+				not the field name -->
+			<% target.errors.each do |field, msg| %>  
+				<li><%= msg %></li>  
+			<% end %>  
+		</ul>  
+    </div>  
+<% end %> 

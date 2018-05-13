@@ -1,0 +1,42 @@
+.pagination a, .pagination span.current, .pagination span.gap {
+    float: center;
+    padding: 0 14px;
+    line-height: 40px;
+    text-decoration: none;
+    background-color: black;
+    border: 3px solid #2192B8;
+    border-left-width: 0;
+
+}
+
+.pagination {
+    text-align: center;
+    border-left: 1px solid #2192B8;
+    .first{
+        padding : 0;
+        float: none;
+        border: none;
+
+    }
+    .prev {
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .page{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .next{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .last{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+}
+

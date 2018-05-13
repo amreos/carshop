@@ -1,0 +1,28 @@
+<!--app/views/layouts/application.html.erb-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carshop</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!-- Render navigation bar -->
+ <%= render 'shared/navbar' %>
+
+      <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+
+<div>
+ <%= yield %>
+</div>
+
+ </body>
+</html>

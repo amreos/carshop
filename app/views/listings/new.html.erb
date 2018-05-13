@@ -1,0 +1,8 @@
+<!-- app\views\new.html.erb -->
+<%= render "/error_messages", :message_header => "Cannot save: ", :target => @listing %> 
+
+<div class="form1">
+  <div class="main-title"><strong>Create New Listing</strong></div>
+    <%= render 'form' %>
+	<%= link_to 'Back', listings_path, class: "btn btn-primary"  %>
+</div>

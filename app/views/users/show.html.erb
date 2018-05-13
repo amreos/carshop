@@ -1,0 +1,12 @@
+<!-- need to change user email to username later after implementing names-->
+<h1><%= full_name %></h1>
+<%= avatar_for(@user) %>
+<h1><%= @user.username %></h1>
+<h1><%= @user.birthday %></h1>
+<h1><%= @user.about %></h1>
+<!--To delete after testing this second avatar-->
+<!--<%= image_tag @user.avatar.url(:thumb) if @user.avatar? %>-->
+
+<%#= avatar_for(@user) %>
+<%#= @user.description %>
+<!--<%= link_to "Edit", edit_user_path(@user) %>-->

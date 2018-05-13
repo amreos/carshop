@@ -1,0 +1,39 @@
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #2192B8;
+    color: white;
+}
+
+tr:hover {background-color: #f5f5f5}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+td {
+    height: 30px;
+    vertical-align: bottom;
+}
+th {
+    text-align: center;
+}
+table {
+    width: 100%;
+}
+
+th {
+    height: 20px;
+}
+
+
+
+body {
+    padding-top: 60px; 
+}
+
+
+
+

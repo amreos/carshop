@@ -1,0 +1,64 @@
+<body>  
+<fieldset>
+    <h1 align="center">Classic Cars For Sale</h1>
+       <div class="container">                                  
+          <div class="table-responsive">          
+            <table class="table">
+               <thead>
+                  <tr>
+                    <th>TITLE</th>
+                    <th>IMAGE</th>
+               <!-- <th>DESCRIPTION</th>-->
+                    <th>MAKE</th>
+                    <th>MODEL</th>
+                    <th>MPG</th>
+                    <th>PRICE</th>
+                     <th>DATE REGISTERED</th>
+                    <th colspan="3"></th>
+                  </tr>
+                </thead>
+              <tbody>
+
+    <% @listings.each do |listing| %>
+      <tr>
+        <td><%= listing.title %></td>
+            <td><%= link_to (image_tag listing.img_url, :size => "200x150"), listing %></td>
+        <!--<td><%= listing.description %></td>-->
+            <td><%= listing.make %></td>
+            <td><%= listing.model %></td>
+            <td><%= listing.mpg %></td>
+            <td><%= number_to_currency listing.price, unit: "£" %></td>
+            <td><%= listing.registered %></td>
+            <td><%= link_to 'Show', listing, class: "btn btn-success btn-sm" %>
+            </td>   
+            <% if user_signed_in? %>
+            <td><%= link_to 'Edit', edit_listing_path(listing), class: " btn btn-warning btn-sm" %></td>
+            <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: " btn btn-danger btn-sm" %></td>
+            <% end %>
+           </tr>
+          <% end %>
+         </tbody>
+        </table>
+       
+      </div>
+     </div>
+   </fieldset>
+  </body>
+
+<br>
+<div class="col-md-4 text-center" > 
+<%= link_to 'Create New Listing', new_listing_path, class: " btn btn-success btn-sm"  %>
+</div>
+
+  <!--<div id="pagination">-->
+      <%#= paginate @listings %>
+      <%#= paginate @listings, :page_links => false %> 
+   <!-- </div> -->
+  <!--</div>-->
+
+<div class="pagination">
+    <div class="page_info">
+      <%= page_entries_info @listings %>
+    </div>
+    <%= paginate @listings, :container => true %>
+</div>

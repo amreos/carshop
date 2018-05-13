@@ -1,0 +1,144 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <script src="https://use.fontawesome.com/0c41c30115.js"></script>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+  </style>
+
+<!--jquery slideshow css start here-->
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+
+<link type="text/css" href="css/overcast/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img id="drag1" src="<%= asset_path('porshebanner.jpg') %>" draggable="true" ondragstart="drag(event)"  alt="Chania" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img id="drag1" src="<%= asset_path('nissanbanner.jpg') %>" draggable="true" ondragstart="drag(event)"  alt="Chania" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img id="drag1" src="<%= asset_path('hondabanner.jpg') %>" draggable="true" ondragstart="drag(event)"  alt="Chania" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img id="drag1" src="<%= asset_path('ferraribanner.jpg') %>" draggable="true" ondragstart="drag(event)"  alt="Chania" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img id="drag1" src="<%= asset_path('bmwbanner.jpg') %>" draggable="true" ondragstart="drag(event)"  alt="Chania" width="460" height="345">
+      </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+    <div class="col-sm-4 col-lg-4 col-md-4">
+          <h4><a href="#">Featured sports cars</a>
+              </h4>
+                <p>If you like our featured cars please check the rest of the stock <a target="_blank" href="http://localhost:3000/listings">More Listings</a> We have a hude stock of sport cars ranging from affordable to more expensive automobile</p>   
+            <a class="btn btn-primary" target="_blank" href="localhost:3000/listings">View more</a>
+         </div>
+
+<div class="col-md-4">
+    <div class="thumbnail">
+      <img id="drag1" src="<%= asset_path('classic7.jpg') %>" draggable="true" ondragstart="drag(event)" width="350" height="300" alt="car">
+          <div class="caption">
+            <h4 class="pull-right">£120.000</h4>
+              <h3><strong>Classic ford 1969</strong></h3>
+              <p>2 Previous Owners, Grey, 3 owners, Milano Leather (Standard Seats), Audi Warranty - 2 Years/Up to 60000 Miles, Technology Package - Low, Aluminium Trigon Inlays, Auto - Dimming Rear - View Mirror, Electromechanical Power Steering, MMI Navigation System - DVD-Based, Automatic Headlight Operation, Third Brake Light. </p>
+          </div>
+
+ <div class="ratings">
+        <p class="pull-right">15 reviews</p>
+                <p>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                </p>
+            <p><a href="listings/2" class="btn btn-primary" role="button">View Details</a></p>
+         </div>
+      </div>
+  </div>
+
+<div class="col-md-4">
+    <div class="thumbnail">
+      <img id="drag1" src="<%= asset_path('classic17.jpg') %>" draggable="true" ondragstart="drag(event)" width="350" height="300" alt="car">
+          <div class="caption">
+           <h4 class="pull-right">£21.000</h4>
+          <h3><strong>Crysler 1940</strong></h3>
+         <p>Insurance Group 12, SAVE 9051 off new list price, Cruise Control,
+          Air Conditioning,Reversing Sensors Rear,Bluetooth,15 inch Wheels,Alloy Wheels,Cloth Trim,Metallic paint,Cloth - Black, 0 Annual Tax,
+          78.4 MPG,49 months manufacturer warranty remaining. All vehicles are inspected by trained technicians and are history checked.</p>
+         <div class="ratings">
+            <p class="pull-right">31 reviews</p>
+                 <p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                 </p>
+                  <p><a href="listings/8" class="btn btn-primary" role="button">View Details</a></p>    
+               </div>
+            </div>
+        </div>
+    </div>
+  </div>
+ </body>
+
+
+
+
+

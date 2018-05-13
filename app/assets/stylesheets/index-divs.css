@@ -1,0 +1,52 @@
+/* 'borders' can be displayed if the 's' is removed to make a valid CSS selector
+	styles used on main product page 'listingss/index.html.erb'
+
+
+ */
+
+#all-content {
+	widths: 80em;
+	margin-left: auto; 
+	margin-right: auto;
+	font-size: 0.8em;
+	border: 0.1em solid black;
+} 
+
+#listing-box {
+	width: 23em;
+	height: 11em;
+	padding-top: 1em;
+	padding-left: 1em;
+	float: left; 
+	borders: 0.1em solid brown;
+}
+
+#form-group {
+	width: 7.5em;
+	height: 9em;
+	float: right;
+	borders: 0.2em solid purple;
+}
+
+#form-group {
+	width: 12em;
+	height: 8em;
+	padding-left:  1em;
+	padding-top: 1em;
+	float: left;
+	borders: 0.2em solid crimson;
+}
+
+#form-group {
+	padding-top: 0.3em;
+	font-size: 1.15em;
+	font-weight:bold;
+	borders: 0.1em solid DarkGray;
+}
+
+#form-group {
+	padding-top: 0.4em;
+	font-size: 1.1em;
+	borders: 0.1em solid DarkGray;
+}
+

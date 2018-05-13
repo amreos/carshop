@@ -1,0 +1,18 @@
+<h1>Edit Profile</h2
+
+<%= form_for(@user, html: { multipart: true }) do |f| %>
+
+    <%= f.file_field :avatar %>
+
+	<%= f.label :username %>
+	<%= f.text_field :username %>
+
+	<%= f.label :last_name %>
+	<%= f.text_field :lastname %>
+
+	<%= f.label :description %>
+	<%= f.text_area :description %>
+
+	<%= f.submit "Save Change", class: 'button green-inner-button' %>
+    <%= link_to "Cancel", @user, class: 'button green-border-button' %>
+<% end %>
