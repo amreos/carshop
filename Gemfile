@@ -59,6 +59,8 @@ group :development do
   gem "better_errors"
   gem 'byebug'
   gem 'web-console', '~> 2.0'
+  gem 'sqlite3'
+
 end
 group :production do
   gem 'pg'

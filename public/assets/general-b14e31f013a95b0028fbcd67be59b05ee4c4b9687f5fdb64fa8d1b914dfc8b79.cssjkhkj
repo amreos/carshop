@@ -1,0 +1,75 @@
+/* this is a comment within a css file, ignored by the computer ... */
+
+/* to ensure the 'main-div' displays the full length of any size screen
+	use the commands below -
+	set the 'html' and 'body' height attribute value to 100% 
+	set the 'min-height' of the 'main-div' to 100% 
+	*/
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	font-family: sans-serif, verdana, arial, helvetica ;
+	font-size: medium;
+	line-height: 1em;
+   
+ /* delete 's' of borders to display a green border */
+	borders: 0.1em solid green; 
+}
+  
+/* a unique element, usage id='main-div' see general-one.html */ 
+#main-div{
+	min-height: 100%;
+	/* the combined width of three divs, margins and padding ...
+		use this value to display all three divs beside each other */
+	width: 59em;
+	/* to center the div use the commands below ...
+		a margin of half the combined width, position set to 'absolute' 
+		and left: 50% */
+
+	/* padding same height as footer plus a bit more ... */
+	padding-bottom: 2.3em;
+	overflow: hidden;
+
+	margin-left: -29.5em;
+	position: absolute;
+	left: 50%;
+	background-color: #ddd;
+	borders: 0.1em solid red; 
+}
+
+/* colouring hyper text links */
+a:link {color:#000;}      						/* unvisited link  black */
+a:visited {color:#000;}  						/* visited link  black */
+a:hover {color:#000; background-color:#FFF; }  	/* mouse over link, black */
+				
+.centre-content {
+	margin-left: auto; 
+	margin-right: auto;
+	widths: 60em;
+	text-align:center;
+	font-size: 0.8em;
+	borders: 0.1em solid black;
+} 
+.centre-content table{
+	text-align:left;
+	margin-left: auto; 
+	margin-right: auto;
+} 
+
+.button-to{
+	font-size: 0.8em;
+	font-weights: bold;
+	font-family: vedana, arial, helvetica ;
+	background-color: #ccc;
+	borders: 0.1em solid orange;
+	float: left;
+	/* top right bottom left */
+	padding: 0em 0em 0em 0em;
+ }
+
+ 
+	
+	
