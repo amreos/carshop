@@ -16,7 +16,7 @@ class Ability
       else
         can :read, :all
       end
-end
+
 
           # Always performed
           can :access, :ckeditor   # needed to access Ckeditor filebrowser
@@ -51,4 +51,5 @@ end
     # See the wiki for details:
     # https://github.com/ryanb/cancan/wiki/Defining-Abilities
   #end
+end
 end
