@@ -12,10 +12,11 @@ class Ability
         can :update, Comment do |comment| # customer can write comments
            comment.try(:user) ==user || user.role?(:admin)# customer can only update their comments
         can :read, :all #customer can read all
+      end
       else
         can :read, :all
       end
-
+end
 
           # Always performed
           can :access, :ckeditor   # needed to access Ckeditor filebrowser
