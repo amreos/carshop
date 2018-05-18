@@ -49,7 +49,24 @@
       <strong>DESCRIPTION:</strong> <%= @listing.description %>
       <% end %>
     </div>
+ <span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+ <h4 class="avg-rating">Average Rating is <h4 itemprop="ratingValue" class="avg-rating"><%= @average_review %></h4></h4>
+            <div class="average-review-rating" data-score="<%= @average_review %>"></div>
+    </div>
+  </div>
 
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="reviews">
+      <h1>Reviews</h1>
+      <%= render @listing.reviews %>
+ 
+      <div>
+        <%= link_to "Add Reviews", new_listing_review_path(@listing), class: "btn-custom" %>
+      </div>
+    </div>
+  </div>  
       <br></br>
        <%= link_to 'Edit', edit_listing_path(@listing), class: "btn btn-success btn-sm" %> 
        <%= link_to 'Back', listings_path, class: "btn btn-primary btn-sm" %>
@@ -58,4 +75,34 @@
 
 
 
+
+<script>
+  $('.review-rating').raty({
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    },
+    path: '/assets/'
+  });
+</script>
+
+<script>
+  $('.user-review-rating').raty({
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    },
+    path: '/assets/'
+  });
+</script>
+
+<script>
+  $('.average-review-rating').raty({
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    },
+    path: '/assets/'
+  });
+</script>
 

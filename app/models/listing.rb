@@ -3,7 +3,7 @@
 class Listing < ActiveRecord::Base
 
 	belongs_to :admin
-
+	has_many :reviews
 	validates :title, :presence => { :message => "cannot be blank ..."}
 	validates :title, :length => {:in => 2..20, :message => "Title must be between two and twenty characters"}
   
